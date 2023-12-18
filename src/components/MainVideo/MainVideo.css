@@ -1,0 +1,17 @@
+.video-container{
+    width: 80%;
+    height: 90vh;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin: 13% 0;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.2);
+
+}

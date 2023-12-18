@@ -3,6 +3,7 @@ import "./App.css";
 
 import { NavBar } from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import MainVideo from "./components/MainVideo/MainVideo";
 
 class App extends React.Component {
   render () {
@@ -10,6 +11,7 @@ class App extends React.Component {
       <div className="App">
         
         <NavBar />
+        <MainVideo/>
         <ItemListContainer/>
       </div>
       
