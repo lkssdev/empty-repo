@@ -1,0 +1,19 @@
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr)); 
+    gap: 40px; 
+    margin: 10vh 0; 
+    padding: 0 2%;
+    min-height: 20vh;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.item-list .li{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+  }

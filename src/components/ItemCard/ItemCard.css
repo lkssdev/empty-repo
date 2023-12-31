@@ -1,0 +1,27 @@
+.item-card{
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 2px;
+    height: 46vh;
+    width: auto;
+    padding: 2%;
+
+}
+
+.item-card img{
+    background-color: rgb(233, 233, 233);
+    height: 88%;
+    width: 100%;
+    object-fit: contain;
+    padding: 2%;
+}
+
+.item-card h3{
+    height: 6%;
+    
+}
+
+.item-card p{
+    height: 6%;
+}
+
+

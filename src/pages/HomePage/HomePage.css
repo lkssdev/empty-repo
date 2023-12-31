@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  .Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

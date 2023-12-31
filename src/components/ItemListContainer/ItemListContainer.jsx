@@ -1,11 +1,44 @@
-import React from 'react'
+import ItemCard from '../ItemCard/ItemCard'; 
+import "./ItemListContainer.css"
+
+import { Link } from 'react-router-dom';
 
 const ItemListContainer = () => {
-  return (
-    <div style={ {backgroundColor: "black", color: "white", margin: "30% 0", fontSize:"2rem", padding: "20px", borderRadius:"5px", zIndex: "1"}}>
-        <h2> Mas contenido proximamente</h2>
-    </div>
-  )
-}
+  const items = [
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    { img: "../../../public/favicon.png", name: 'Item 1', price: 10 },
+    
+  
+  ];
 
-export default ItemListContainer
+
+  return (
+    <div className="item-list">
+      {items.map((item, index) => (
+        <Link key={index} className='li' to={`item/${index}`}>
+          <ItemCard item={item} img={item.img} name={item.name} price={item.price} />
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default ItemListContainer;
